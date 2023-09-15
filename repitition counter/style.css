@@ -1,0 +1,74 @@
+/* General */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(gym.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    height: 100vh;
+}
+
+hr {
+    margin: 0;
+}
+
+/* reusable */
+.container {
+    margin: 6em auto;
+    width: 60%;
+    max-width: 350px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 3em;
+    padding-bottom: 1.25em;
+    background-color: rgba(10,94,102, 0.75);
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3em;
+}
+
+button {
+    border: none;
+    border-radius: 25px;
+    padding: 2em 0em 2em 0;
+    font-weight: bold;
+    color: ghostwhite;
+}
+
+/* specific */
+.display {
+    background-color: rgba(251,247,245, .75);
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+#count-el {
+    color: darkred;
+}
+
+#increment-btn {
+    width: 100%;
+    background: gray;
+    margin-bottom: 1em;
+    border: 2px solid rgba(251,247,245, .25);
+}
+
+#save-btn {
+    width: 100%;
+    background-color: darkred;
+    border: 2px solid gray;
+}
+
+.output {
+    text-align: center;
+    color: rgb(251,247,245);
+}
