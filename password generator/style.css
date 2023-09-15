@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --my-color: #49fb35;
+}
+
+body {
+    margin: 0;
+    padding: 1em;
+    font-family: 'Roboto', sans-serif;
+    background-color: #282D35;
+    color: #fff;
+    font-size: 20px;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gap {
+    gap: 1em;
+}
+
+.highlight {
+    color: var(--my-color);
+}
+
+.container {
+    background-color: #21222A;
+    padding: 1em 1em;
+    border-radius: 5px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.h1 {
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 2em;
+    letter-spacing: 1px;
+}
+
+.main-container {
+    margin: 0 auto;
+}
+
+.password {
+    letter-spacing: 0.125rem;
+}
+
+.password-settings {
+    margin-top: 1em;
+
+}
+
+.generate-btn-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.generate {
+    padding: 1em 2em;
+    background-color: #49fb35;
+    border-radius: 12px;
+    color: #282D35;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.copy-wrap{
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #49fb35;
+}
+
+.copy {
+    width: 25px;
+}
+
+.slider {
+    margin: 3em 0 2em 0;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    outline: none;
+    opacity: 0.8;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    /* background-image: url(./img/smiley.png); */
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background: #49fb35;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #49fb35;
+    cursor: pointer;
+}
+
+.strength {
+    /* width: 90%; */
+    margin: 0 auto;
+    background-color: #282D35;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+.battery {
+    width: 50px;
+}
+
+@media(min-width: 700px) {
+    .slider {
+        margin: 6em 0 5em 0;
+    }
+    .container {
+        padding: 1em 2em;
+    }
+}

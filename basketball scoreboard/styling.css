@@ -1,0 +1,95 @@
+/* General classes*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 5em 0 0 0;
+    background-image: url(./basketball.jpg);
+    background-position: center;
+}
+
+.scoreboard {
+    max-width: 650px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #003568;
+    padding: 1em 3em 1em 3em;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+}
+
+.d-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3em;
+}
+
+.title {
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.score {
+    margin: 0 auto;
+    border-radius: 10px;
+    font-size: 5rem;
+    color: red;
+    padding: 0.125em 0.5em 0.125em 0.5em;
+    background-color: black;
+    max-width: 150px;
+}
+
+.btn-wrapper {
+    display: flex;
+    margin-top: 2em;
+}
+
+.btn {
+    text-align: center;
+    color: ghostwhite;
+    background-color: #003568;
+    border: 1px solid ghostwhite;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.50;
+}
+
+.winning {
+    border: 3px yellow solid;
+}
+
+
+/* Specific elements on web app*/
+.new-game-btn {
+    margin-top: 2em;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+
+/* Media queries */
+@media (max-width: 600px) {
+    .score {
+        font-size: 4rem;
+        padding: 0.125em 0.25em 0.125em 0.25em;
+    }
+    .d-flex {
+        gap: 2.5em;
+    }
+}
+
+@media (min-width: 800px) {
+    body {
+        background-size: cover;
+    }
+}

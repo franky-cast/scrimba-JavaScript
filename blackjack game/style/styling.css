@@ -1,0 +1,114 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.border {
+    border: 1px solid red;
+}
+
+.border2 {
+    border: 1px solid yellow;
+}
+
+body {
+    background: url(../assets/img/bg1.jpeg);
+    background-size: cover;
+    margin: 0;
+    background-color: white;
+    padding-top: 20vh;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    height: 100vh;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+    gap: 1em;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.hide {
+    display: none;
+}
+
+.btn-wrap {
+    margin: 0 auto;
+    width: 40%;
+}
+
+@media (min-width: 1200px) {
+    .btn-wrap {
+        width: 30%;
+    }
+}
+
+/*--------------------------------------------------------------
+# container
+--------------------------------------------------------------*/
+.container {
+    width: 90%;
+    min-height: 61%;
+    background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+    padding: 2em;
+    color: #FFDF00;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 31%;
+    }
+}
+
+.blackjack {
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+    border: 1px solid #FFDF00;
+}
+
+.out {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border: 1px solid black;
+}
+
+/*--------------------------------------------------------------
+# elements in container
+--------------------------------------------------------------*/
+.play-btn-wrap {
+    margin-top: 5em;
+}
+
+.input-wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.button {
+    width: 60%;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+}
+
+.button:hover {
+    opacity: .8;
+}
+
+
+.submit {
+    width: 30%;
+    margin: 0 auto;
+}
