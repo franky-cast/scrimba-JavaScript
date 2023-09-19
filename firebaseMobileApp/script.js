@@ -20,7 +20,7 @@ const listEl = document.getElementById("shopping-list");
 
 // CREATE (adds item to firebase)
 buttonEl.addEventListener("click", () => {
-    let inputValue = inputEl.value;
+    let inputValue = inputEl.value;w
     if (inputValue.length > 0 && inputValue != " ") {
         inputEl.value = "";
         push(shoppingList, inputValue);
